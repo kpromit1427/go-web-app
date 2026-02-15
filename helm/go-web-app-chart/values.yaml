@@ -4,7 +4,7 @@ image:
   repository: promitb27/go-web-app
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "22031230135"
+  tag: "22032685818"
 
 ingress:
   enabled: false
