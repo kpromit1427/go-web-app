@@ -37,10 +37,17 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v4
 
+    - name: Set up Go 1.22.2
+      uses: actions/setup-go@v4
+      with:
+        go-version: 1.22.2
+
     - name: Run golangci-lint
       uses: golangci/golangci-lint-action@v6
       with:
-        version: v1.56.2
+        version: v1.57.2
+        skip-cache: true
+
   
   push:
     runs-on: ubuntu-latest
